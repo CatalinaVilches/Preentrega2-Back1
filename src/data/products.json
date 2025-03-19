@@ -1,0 +1,42 @@
+[
+     {
+       "id": 1,
+       "title": "camisa clásica",
+       "description": "camisa de algodón de manga larga",
+       "code": "CS01",
+       "price": 1500,
+       "status": true,
+       "stock": 35,
+       "category": "CAMISAS",
+       "thumbnails": [
+         "camisaClasica.jpg"
+       ]
+     },
+     {
+       "id": 2,
+       "title": "chaqueta deportiva",
+       "description": "chaqueta impermeable para clima frío",
+       "code": "CH02",
+       "price": 2500,
+       "status": true,
+       "stock": 150,
+       "category": "CHAQUETAS",
+       "thumbnails": [
+         "ChaquetaDeportiva.jpg"
+       ]
+     },
+     {
+       "id": 3,
+       "title": "zapatillas running",
+       "description": "zapatillas deportivas para correr",
+       "code": "ZR03",
+       "price": 3500,
+       "status": false,
+       "stock": 5,
+       "category": "ZAPATILLAS",
+       "thumbnails": [
+         "zapatillasRunning.jpeg"
+       ]
+     }
+   ]
+   

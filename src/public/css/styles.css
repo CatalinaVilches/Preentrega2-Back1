@@ -1,0 +1,223 @@
+
+.homeMain {
+    padding: 1rem;
+    max-width: 1800px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem; 
+}
+
+
+.container h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: .6rem;
+}
+
+
+.realMain {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+
+.realMain .containerForms {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+
+.realMain .containerForms .formularios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+.realMain .containerForms .formularios section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.realMain .containerForms .formularios section .titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+
+#formProducts {
+    border: 1px solid #000;
+    padding: 1.2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 40px;
+}
+
+
+#formProducts .datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#formProducts .datos input,
+#formProducts #status {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+
+#formProducts #boton {
+    grid-column: span 2;
+    align-self: baseline;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+
+#formDelProducts {
+    border: 1px solid #000;
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#formDelProducts .datos label {
+    text-transform: uppercase;
+}
+
+#formDelProducts .datos input {
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+
+#formDelProducts #delBoton {
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 10px;
+}
+
+@media (max-width: 450px) {
+    .descripciones .description {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 720px) {
+    .contenedorProductos {
+        padding: 1.7rem;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 50% 50%;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .product .descripcion {
+        padding: 1rem;
+    }
+
+    .product .descripcion p {
+        width: 70%;
+    }
+
+    
+    .realMain .containerForms .formularios {
+        align-items: center;
+    }
+
+    .realMain .containerForms .formularios section {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .homeMain {
+        max-width: none;
+        width: 100%;
+    }
+
+    .contenedorProductos {
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+    }
+
+    .realMain {
+        max-width: 2000px;
+        width: 90%;
+    }
+
+    .realMain .containerForms .formularios {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .contenedorProductos {
+        grid-template-columns: repeat(4, minmax(300px, 1fr));
+    }
+}

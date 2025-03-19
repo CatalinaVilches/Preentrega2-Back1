@@ -1,0 +1,42 @@
+<article class="contenedorProductos">
+  {{#each products}}
+    <div class="product">
+      <div class="imgContain">
+        <img src="{{thumbnails.[0]}}" alt="{{title}}">
+      </div>
+      <div class="descripcion">
+        <h3 class="productTitle">{{title}}</h3>
+        <div class="descripciones">
+          <div class="description des">
+            <small>Descripcion:</small>
+            <p>{{description}}</p>
+          </div>
+          <div class="description categoria">
+            <small>Categoria:</small>
+            <p>{{category}}</p>
+          </div>
+          <div class="description code">
+            <small>Code:</small>
+            <p>{{code}}</p>
+          </div>
+          <div class="description id">
+            <small>Id:</small>
+            <p>{{id}}</p>
+          </div>
+          <div class="description price">
+            <small>Price:</small>
+            <p>{{price}}</p>
+          </div>
+          <div class="description status">
+            <small>Status:</small>
+            <p class="statusP">{{status}}</p>
+          </div>
+          <div class="description stock">
+            <small>Stock:</small>
+            <p>{{stock}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</article>
